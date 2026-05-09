@@ -66,12 +66,18 @@
 
     p { font-size: 13px; line-height: 1.45; }
 
-    .skills-grid {
+    .skills-group {
       display: flex;
-      flex-wrap: wrap; 
-      gap: 6px 12px; 
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 6px;
+      font-size: 13px;
     }
-    .skills-grid span { font-size: 13px; }
+
+    .skill-category {
+      font-weight: 700;
+      min-width: 85px;
+    }
 
     .job-title, .project-name { font-weight: 700; font-size: 13px; }
     .job-company { font-style: italic; font-size: 12.5px; margin-bottom: 4px; }
@@ -160,11 +166,6 @@
         font-size: 11px;
       }
 
-      .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-      }
-
       .download-btn {
         bottom: 16px;
         right: 16px;
@@ -188,12 +189,8 @@
 
       body, p, ul li, .cert-item,
       .job-title, .project-name,
-      .edu-degree, .skills-grid span {
+      .edu-degree {
         font-size: 12px;
-      }
-
-      .skills-grid {
-        grid-template-columns: 1fr 1fr;
       }
   }
   </style>
@@ -266,17 +263,34 @@
 
     <section>
       <div class="section-title">Technical Skills</div>
-      <div class="skills-grid">
-        <span>HTML</span>
-        <span>CSS</span>
+
+      <div class="skills-group">
+        <span class="skill-category">Languages:</span>
         <span>JavaScript</span>
-        <span>Tailwind CSS</span>
         <span>TypeScript</span>
+      </div>
+
+      <div class="skills-group">
+        <span class="skill-category">Frontend:</span>
+        <span>HTML</span>
+        <span>Tailwind CSS</span>
         <span>React</span>
-        <span>NodeJS</span>
+      </div>
+
+      <div class="skills-group">
+        <span class="skill-category">Backend:</span>
+        <span>Node.js</span>
+        <span>Express</span>
+      </div>
+
+      <div class="skills-group">
+        <span class="skill-category">Database:</span>
         <span>MongoDB</span>
         <span>PostgreSQL</span>
-        <span>Express</span>
+      </div>
+
+      <div class="skills-group">
+        <span class="skill-category">Tools:</span>
         <span>Git</span>
         <span>GitHub</span>
       </div>
@@ -298,7 +312,7 @@
       <div class="section-title">Projects</div>
 
       <div class="project-block">
-        <div class="project-name">Holler</div>
+        <div class="project-name">Holler — Ecommerce</div>
         <div class="project-meta">PERN, TypeScript , Tailwind CSS &nbsp;·&nbsp; <a href="https://holler-uqto.onrender.com/" target="_blank">Live Demo : https://holler-uqto.onrender.com/</a> &nbsp;·&nbsp; <a href="https://github.com/Loopmaker/Holler" target="_blank">Code : https://github.com/Loopmaker/Holler</a></div>
         <ul>
           <li>Built a full-stack ecommerce application with product browsing, cart functionality, and checkout flow.</li>
@@ -309,7 +323,7 @@
       </div>
 
       <div class="project-block">
-        <div class="project-name">Hirearchy</div>
+        <div class="project-name">Hirearchy — Employee Management System</div>
         <div class="project-meta">MERN, Tailwind CSS &nbsp;·&nbsp; <a href="https://hirearchy-ems.vercel.app/login" target="_blank">Live Demo : https://hirearchy-ems.vercel.app/</a> &nbsp;·&nbsp; <a href="https://github.com/Loopmaker/Hirearchy" target="_blank">Code : https://github.com/Loopmaker/Hirearchy</a></div>
         <ul>
           <li>Built a full-stack Employee Management System using React, TypeScript, Node.js, Express, and MongoDB, supporting authentication, attendance tracking, leave management, and payslip generation.</li>
