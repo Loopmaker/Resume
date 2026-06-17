@@ -11,31 +11,33 @@
     body {
       font-family: 'Lato', 'Calibri', Arial, sans-serif;
       font-size: 13px;
-      color: #000;
-      background: #6b6b6b;
+      color: #111;
+      background: #e8e8e8;
       min-height: 100vh;
-      padding: 36px 20px 60px;
-      line-height: 1.45;
+      padding: 40px 20px 70px;
+      line-height: 1.5;
     }
 
     .page {
       max-width: 780px;
       margin: 0 auto;
-      padding: 42px 54px 48px;
+      padding: 48px 58px 52px;
       background: #fff;
-      box-shadow: 0 4px 28px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.3);
-      border-radius: 1px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12), 0 8px 32px rgba(0,0,0,0.08);
+      border-radius: 2px;
       position: relative;
     }
 
-    header { text-align: center; margin-bottom: 10px; }
+    /* ── Header ── */
+    header { text-align: center; margin-bottom: 14px; }
 
     header h1 {
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 900;
-      letter-spacing: 2px;
+      letter-spacing: 3.5px;
       text-transform: uppercase;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      color: #000;
     }
 
     .contact-row {
@@ -43,59 +45,168 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 3px 16px;
-      font-size: 12px;
+      gap: 4px 18px;
+      font-size: 11.5px;
+      color: #333;
     }
 
-    .contact-row a { color: #000; text-decoration: none; }
-    .contact-item { display: flex; align-items: center; gap: 4px; }
+    .contact-row a { color: #111; text-decoration: none; }
+    .contact-row a:hover { text-decoration: underline; }
+    .contact-item { display: flex; align-items: center; gap: 5px; }
 
-    .divider { border: none; border-top: 1.5px solid #000; margin: 10px 0 12px; }
+    /* ── Divider ── */
+    .divider {
+      border: none;
+      border-top: 1.5px solid #111;
+      margin: 14px 0 16px;
+    }
 
-    section { margin-bottom: 10px; }
+    /* ── Sections ── */
+    section { margin-bottom: 13px; }
 
     .section-title {
-      font-size: 12.5px;
+      font-size: 10.5px;
       font-weight: 900;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.8px;
+      color: #000;
       border-bottom: 1px solid #000;
-      padding-bottom: 2px;
-      margin-bottom: 5px;
+      padding-bottom: 3px;
+      margin-bottom: 7px;
     }
 
-    p { font-size: 13px; line-height: 1.45; }
+    /* ── Summary ── */
+    p { font-size: 12.5px; line-height: 1.6; color: #222; }
 
+    /* ── Skills ── */
     .skills-group {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 6px;
-      font-size: 13px;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 5px;
     }
 
     .skill-category {
+      font-size: 11.5px;
       font-weight: 700;
-      min-width: 85px;
+      min-width: 80px;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
-    .job-title, .project-name { font-weight: 700; font-size: 13px; }
-    .job-company { font-style: italic; font-size: 12.5px; margin-bottom: 4px; }
-    .project-meta { font-style: italic; font-size: 12px; margin-bottom: 2px; }
+    .skill-pill {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      color: #111;
+      background: #f2f2f2;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 2px 8px;
+      line-height: 1.6;
+      letter-spacing: 0.2px;
+    }
 
-    ul { padding-left: 18px; margin-top: 3px; }
-    ul li { font-size: 13px; margin-bottom: 2px; line-height: 1.45; }
+    /* ── Experience ── */
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
 
-    .project-block { margin-bottom: 7px; }
+    .job-title {
+      font-weight: 700;
+      font-size: 13px;
+      color: #000;
+    }
 
-    .edu-degree { font-weight: 700; font-size: 13px; }
-    .edu-school  { font-style: italic; font-size: 12.5px; }
-    .edu-year    { font-style: italic; font-size: 12.5px; }
+    .job-date {
+      font-size: 11.5px;
+      color: #555;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
 
-    .cert-item { font-size: 13px; margin-bottom: 2px; }
+    .job-company {
+      font-style: italic;
+      font-size: 12px;
+      color: #444;
+      margin-bottom: 5px;
+    }
 
-    a { color: #000; text-decoration: none; }
+    /* ── Projects ── */
+    .project-block { margin-bottom: 9px; }
 
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .project-name {
+      font-weight: 700;
+      font-size: 13px;
+      color: #000;
+    }
+
+    .project-links {
+      font-size: 11px;
+      color: #555;
+      display: flex;
+      gap: 10px;
+    }
+
+    .project-links a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #bbb;
+      padding-bottom: 1px;
+    }
+
+    .project-links a:hover { border-bottom-color: #000; color: #000; }
+
+    .project-stack {
+      font-size: 11.5px;
+      color: #555;
+      margin-bottom: 4px;
+      font-style: italic;
+    }
+
+    /* ── Lists ── */
+    ul { padding-left: 16px; margin-top: 4px; }
+    ul li {
+      font-size: 12.5px;
+      margin-bottom: 3px;
+      line-height: 1.55;
+      color: #222;
+    }
+
+    /* ── Education ── */
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-degree { font-weight: 700; font-size: 13px; color: #000; }
+    .edu-year   { font-size: 11.5px; color: #555; }
+    .edu-school { font-style: italic; font-size: 12px; color: #444; margin-top: 1px; }
+
+    /* ── Certifications ── */
+    .cert-item { font-size: 12.5px; margin-bottom: 3px; color: #222; }
+    .cert-link { font-size: 11.5px; color: #444; margin-top: 3px; }
+    .cert-link a { color: #333; border-bottom: 1px solid #bbb; padding-bottom: 1px; }
+    .cert-link a:hover { border-bottom-color: #000; color: #000; }
+
+    a { color: #111; text-decoration: none; }
+
+    /* ── Download button ── */
     .download-btn {
       position: fixed;
       bottom: 28px;
@@ -106,13 +217,14 @@
       background: #111;
       color: #fff;
       font-family: 'Lato', 'Calibri', Arial, sans-serif;
-      font-size: 13.5px;
+      font-size: 12.5px;
       font-weight: 700;
-      letter-spacing: 0.4px;
-      padding: 11px 20px;
-      border-radius: 6px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      padding: 10px 18px;
+      border-radius: 3px;
       cursor: pointer;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.25);
       transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
       z-index: 999;
       text-decoration: none;
@@ -121,78 +233,44 @@
       background: #333;
       color: #fff;
       transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
     }
     .download-btn:active {
       transform: translateY(0);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 1px 6px rgba(0,0,0,0.2);
     }
     .download-btn svg { flex-shrink: 0; }
 
+    /* ── Print ── */
     @media print {
       body { background: #fff; padding: 0; }
       .page { box-shadow: none; padding: 24px 40px; }
       .download-btn { display: none; }
     }
 
+    /* ── Responsive ── */
     @media (max-width: 860px) {
-    body {
-      padding: 20px 12px 40px;
-      }
-
-    .page {
-      padding: 32px 32px 36px;
-      }
+      body { padding: 20px 12px 50px; }
+      .page { padding: 36px 36px 40px; }
     }
 
     @media (max-width: 600px) {
-      body {
-      padding: 12px 8px 30px;
-      }
-
-      .page {
-      padding: 24px 20px 28px;
-      }
-
-      header h1 {
-        font-size: 20px;
-        letter-spacing: 1px;
-      }
-
-      .contact-row {
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
-        font-size: 11px;
-      }
-
-      .download-btn {
-        bottom: 16px;
-        right: 16px;
-        font-size: 12px;
-        padding: 9px 14px;
-      }
+      body { padding: 12px 8px 40px; }
+      .page { padding: 28px 22px 32px; }
+      header h1 { font-size: 22px; letter-spacing: 2px; }
+      .contact-row { flex-direction: column; align-items: center; gap: 5px; font-size: 11px; }
+      .job-header { flex-direction: column; gap: 1px; }
+      .project-header { flex-direction: column; }
+      .edu-row { flex-direction: column; gap: 2px; }
+      .download-btn { bottom: 14px; right: 14px; font-size: 11px; padding: 9px 14px; }
     }
 
     @media (max-width: 400px) {
-      .page {
-        padding: 18px 14px 22px;
-      }
-
-      header h1 {
-        font-size: 17px;
-      }
-
-      .section-title {
-        font-size: 11px;
-      }
-
-      body, p, ul li, .cert-item,
-      .job-title, .project-name,
-      .edu-degree {
-        font-size: 12px;
-      }
-  }
+      .page { padding: 20px 16px 26px; }
+      header h1 { font-size: 18px; letter-spacing: 1.5px; }
+      .section-title { font-size: 10px; letter-spacing: 1.2px; }
+      body, p, ul li, .cert-item, .job-title, .project-name, .edu-degree { font-size: 12px; }
+    }
   </style>
 </head>
 <body>
@@ -258,7 +336,7 @@
 
     <section>
       <div class="section-title">Professional Summary</div>
-      <p>Recent IT graduate specializing in frontend development, building responsive web applications using React and TypeScript. Completed several personal projects featuring interactive user interfaces and API integration for dynamic user experiences. Currently expanding into full-stack development by learning Node.js. Focused on writing clean, maintainable code and eager to contribute to a collaborative development team.</p>
+      <p>Junior Frontend Developer with a B.S. in Information Technology and hands-on experience building full-stack web applications using the PERN and MERN stacks. Developed production-ready projects featuring authentication, role-based access control, REST APIs, and responsive UI with React and Tailwind CSS. Seeking a junior engineering role where I can contribute to real-world product development and continue growing as a developer.</p>
     </section>
 
     <section>
@@ -266,44 +344,48 @@
 
       <div class="skills-group">
         <span class="skill-category">Languages:</span>
-        <span>JavaScript</span>
-        <span>TypeScript</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">TypeScript</span>
       </div>
 
       <div class="skills-group">
         <span class="skill-category">Frontend:</span>
-        <span>HTML</span>
-        <span>Tailwind CSS</span>
-        <span>React</span>
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill">CSS</span>
+        <span class="skill-pill">Tailwind CSS</span>
+        <span class="skill-pill">React</span>
       </div>
 
       <div class="skills-group">
         <span class="skill-category">Backend:</span>
-        <span>Node.js</span>
-        <span>Express</span>
+        <span class="skill-pill">Node.js</span>
+        <span class="skill-pill">Express</span>
       </div>
 
       <div class="skills-group">
         <span class="skill-category">Database:</span>
-        <span>MongoDB</span>
-        <span>PostgreSQL</span>
+        <span class="skill-pill">MongoDB</span>
+        <span class="skill-pill">PostgreSQL</span>
       </div>
 
       <div class="skills-group">
         <span class="skill-category">Tools:</span>
-        <span>Git</span>
-        <span>GitHub</span>
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">GitHub</span>
       </div>
     </section>
 
     <section>
       <div class="section-title">Professional Experience</div>
-      <div class="job-title">IT Helpdesk Support Intern</div>
-      <div class="job-company">Black Orcas Summit Life Insurance Agency – Pru Life UK | August 2025 – November 2025</div>
+      <div class="job-header">
+        <div class="job-title">IT Helpdesk Support Intern</div>
+        <div class="job-date">August 2025 – November 2025</div>
+      </div>
+      <div class="job-company">Black Orcas Summit Life Insurance Agency – Pru Life UK</div>
       <ul>
-        <li>Provided daily technical support to staff members, quickly resolving basic computer and software issues to keep the team working smoothly.</li>
-        <li>Reorganized and digitized company files, which made it much faster and easier for the team to find the information they needed.</li>
-        <li>Designed clean and simple social media graphics using Canva to support the agency's online presence.</li>
+        <li>Provided first-line technical support to agency staff, diagnosing and resolving hardware, software, and connectivity issues to minimize downtime.</li>
+        <li>Digitized and reorganized company file systems, improving document retrieval efficiency for the team.</li>
+        <li>Managed the agency's social media presence by scheduling posts and creating branded graphics using Canva.</li>
       </ul>
     </section>
 
@@ -312,40 +394,55 @@
       <div class="section-title">Projects</div>
 
       <div class="project-block">
-        <div class="project-name">Holler — Ecommerce</div>
-        <div class="project-meta">PERN, TypeScript , Tailwind CSS &nbsp;·&nbsp; <a href="https://holler-uqto.onrender.com/" target="_blank">Live Demo : https://holler-uqto.onrender.com/</a> &nbsp;·&nbsp; <a href="https://github.com/Loopmaker/Holler" target="_blank">Code : https://github.com/Loopmaker/Holler</a></div>
+        <div class="project-header">
+          <div class="project-name">Holler — Ecommerce</div>
+          <div class="project-links">
+            <a href="https://holler-uqto.onrender.com/" target="_blank">Live Demo</a>
+            <a href="https://github.com/Loopmaker/Holler" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="project-stack">PERN · TypeScript · Tailwind CSS</div>
         <ul>
-          <li>Built a full-stack ecommerce application with product browsing, cart functionality, and checkout flow.</li>
-          <li>Created admin features for managing products, orders, and image uploads.</li>
-          <li>Integrated authentication, database management, and API handling for a production-like workflow.</li>
-          <li>Added persistent cart storage and webhook-ready backend endpoints.</li>
+          <li>Developed a full-stack e-commerce application using PostgreSQL, Express, React, and Node.js (PERN) with TypeScript, supporting product browsing, shopping cart, and checkout flow.</li>
+          <li>Built an admin dashboard for managing products, orders, and image uploads with cloud storage integration.</li>
+          <li>Implemented user authentication, RESTful API endpoints, and a webhook-ready backend for payment processing.</li>
+          <li>Enabled persistent cart state using local storage and session management.</li>
         </ul>
       </div>
 
       <div class="project-block">
-        <div class="project-name">Hirearchy — Employee Management System</div>
-        <div class="project-meta">MERN, Tailwind CSS &nbsp;·&nbsp; <a href="https://hirearchy-ems.vercel.app/login" target="_blank">Live Demo : https://hirearchy-ems.vercel.app/</a> &nbsp;·&nbsp; <a href="https://github.com/Loopmaker/Hirearchy" target="_blank">Code : https://github.com/Loopmaker/Hirearchy</a></div>
+        <div class="project-header">
+          <div class="project-name">Hirearchy — Employee Management System</div>
+          <div class="project-links">
+            <a href="https://hirearchy-ems.vercel.app/login" target="_blank">Live Demo</a>
+            <a href="https://github.com/Loopmaker/Hirearchy" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="project-stack">MERN · TypeScript · Tailwind CSS</div>
         <ul>
-          <li>Built a full-stack Employee Management System using React, TypeScript, Node.js, Express, and MongoDB, supporting authentication, attendance tracking, leave management, and payslip generation.</li>
-          <li>Implemented JWT-based authentication and role-based access control, and developed RESTful APIs with email notifications to enable secure, real-time interaction between admin and employee dashboards.</li>
-          <li>Designed responsive and user-friendly interfaces using React and Tailwind CSS, integrating frontend components with backend APIs and handling asynchronous data with Axios.</li>
+          <li>Built a full-stack Employee Management System using the MERN stack (MongoDB, Express, React, Node.js) with TypeScript and Tailwind CSS.</li>
+          <li>Implemented JWT-based authentication and role-based access control (RBAC) to secure separate admin and employee dashboards.</li>
+          <li>Developed RESTful APIs with automated email notifications for leave requests and approvals.</li>
+          <li>Designed responsive UI components in React with Tailwind CSS, integrated with backend APIs using Axios for async data handling.</li>
         </ul>
       </div>
     </section>
 
     <section>
       <div class="section-title">Education</div>
-      <div class="edu-degree">Bachelor of Science in Information Technology</div>
+      <div class="edu-row">
+        <div class="edu-degree">Bachelor of Science in Information Technology</div>
+        <div class="edu-year">2021 – 2025</div>
+      </div>
       <div class="edu-school">ICCT Colleges</div>
-      <div class="edu-year">2021 – 2025</div>
     </section>
 
     <section>
       <div class="section-title">Certifications</div>
-      <div class="cert-item">Legacy Responsive Web Design V8 &nbsp;·&nbsp; freeCodeCamp (2025)</div>
-      <div class="cert-item">Legacy JavaScript Algorithms and Data Structures V8 &nbsp;·&nbsp; freeCodeCamp (2025)</div>
-      <div class="cert-item">Responsive Web Design V8 &nbsp;·&nbsp; freeCodeCamp (2026)</div>
-      <div class="cert-item" style="margin-top:2px;">
+      <div class="cert-item">Responsive Web Design · freeCodeCamp (2025)</div>
+      <div class="cert-item">JavaScript Algorithms and Data Structures · freeCodeCamp (2025)</div>
+      <div class="cert-item">Responsive Web Design V8 · freeCodeCamp (2026)</div>
+      <div class="cert-link">
         <a href="https://www.freecodecamp.org/lakshal" target="_blank">freecodecamp.org/lakshal</a>
       </div>
     </section>
