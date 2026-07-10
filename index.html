@@ -1,461 +1,733 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>John Alvin Rivera – Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"/>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Alvin Rivera – Resume</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    body {
-      font-family: 'Lato', 'Calibri', Arial, sans-serif;
-      font-size: 13px;
-      color: #111;
-      background: #e8e8e8;
-      min-height: 100vh;
-      padding: 40px 20px 70px;
-      line-height: 1.5;
-    }
+      body {
+        font-family: "Lato", "Calibri", Arial, sans-serif;
+        font-size: 13px;
+        color: #111;
+        background: #e8e8e8;
+        min-height: 100vh;
+        padding: 40px 20px 70px;
+        line-height: 1.5;
+      }
 
-    .page {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 48px 58px 52px;
-      background: #fff;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.12), 0 8px 32px rgba(0,0,0,0.08);
-      border-radius: 2px;
-      position: relative;
-    }
+      .page {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 48px 58px 52px;
+        background: #fff;
+        box-shadow:
+          0 2px 12px rgba(0, 0, 0, 0.12),
+          0 8px 32px rgba(0, 0, 0, 0.08);
+        border-radius: 2px;
+        position: relative;
+      }
 
-    /* ── Header ── */
-    header { text-align: center; margin-bottom: 14px; }
+      /* ── Header ── */
+      header {
+        text-align: center;
+        margin-bottom: 14px;
+      }
 
-    header h1 {
-      font-size: 28px;
-      font-weight: 900;
-      letter-spacing: 3.5px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      color: #000;
-    }
+      header h1 {
+        font-size: 28px;
+        font-weight: 900;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: #000;
+      }
 
-    .contact-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 4px 18px;
-      font-size: 11.5px;
-      color: #333;
-    }
+      .contact-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4px 18px;
+        font-size: 11.5px;
+        color: #333;
+      }
 
-    .contact-row a { color: #111; text-decoration: none; }
-    .contact-row a:hover { text-decoration: underline; }
-    .contact-item { display: flex; align-items: center; gap: 5px; }
+      .contact-row a {
+        color: #111;
+        text-decoration: none;
+      }
+      .contact-row a:hover {
+        text-decoration: underline;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
 
-    /* ── Divider ── */
-    .divider {
-      border: none;
-      border-top: 1.5px solid #111;
-      margin: 14px 0 16px;
-    }
+      /* ── Divider ── */
+      .divider {
+        border: none;
+        border-top: 1.5px solid #111;
+        margin: 14px 0 16px;
+      }
 
-    /* ── Sections ── */
-    section { margin-bottom: 13px; }
+      /* ── Sections ── */
+      section {
+        margin-bottom: 13px;
+      }
 
-    .section-title {
-      font-size: 10.5px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 1.8px;
-      color: #000;
-      border-bottom: 1px solid #000;
-      padding-bottom: 3px;
-      margin-bottom: 7px;
-    }
+      .section-title {
+        font-size: 10.5px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        color: #000;
+        border-bottom: 1px solid #000;
+        padding-bottom: 3px;
+        margin-bottom: 7px;
+      }
 
-    /* ── Summary ── */
-    p { font-size: 12.5px; line-height: 1.6; color: #222; }
+      /* ── Summary ── */
+      p {
+        font-size: 12.5px;
+        line-height: 1.6;
+        color: #222;
+      }
 
-    /* ── Skills ── */
-    .skills-group {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 5px;
-      margin-bottom: 5px;
-    }
+      /* ── Skills ── */
+      .skills-group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+      }
 
-    .skill-category {
-      font-size: 11.5px;
-      font-weight: 700;
-      min-width: 80px;
-      color: #000;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
+      .skill-category {
+        font-size: 11.5px;
+        font-weight: 700;
+        min-width: 80px;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
 
-    .skill-pill {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 700;
-      color: #111;
-      background: #f2f2f2;
-      border: 1px solid #ddd;
-      border-radius: 3px;
-      padding: 2px 8px;
-      line-height: 1.6;
-      letter-spacing: 0.2px;
-    }
+      .skill-pill {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 700;
+        color: #111;
+        background: #f2f2f2;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 2px 8px;
+        line-height: 1.6;
+        letter-spacing: 0.2px;
+      }
 
-    /* ── Experience ── */
-    .job-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 1px;
-    }
+      /* ── Experience ── */
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 1px;
+      }
 
-    .job-title {
-      font-weight: 700;
-      font-size: 13px;
-      color: #000;
-    }
+      .job-title {
+        font-weight: 700;
+        font-size: 13px;
+        color: #000;
+      }
 
-    .job-date {
-      font-size: 11.5px;
-      color: #555;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
+      .job-date {
+        font-size: 11.5px;
+        color: #555;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
 
-    .job-company {
-      font-style: italic;
-      font-size: 12px;
-      color: #444;
-      margin-bottom: 5px;
-    }
+      .job-company {
+        font-style: italic;
+        font-size: 12px;
+        color: #444;
+        margin-bottom: 5px;
+      }
 
-    /* ── Projects ── */
-    .project-block { margin-bottom: 9px; }
+      /* ── Projects ── */
+      .project-block {
+        margin-bottom: 9px;
+      }
 
-    .project-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 1px;
-      flex-wrap: wrap;
-      gap: 4px;
-    }
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 1px;
+        flex-wrap: wrap;
+        gap: 4px;
+      }
 
-    .project-name {
-      font-weight: 700;
-      font-size: 13px;
-      color: #000;
-    }
+      .project-name {
+        font-weight: 700;
+        font-size: 13px;
+        color: #000;
+      }
 
-    .project-links {
-      font-size: 11px;
-      color: #555;
-      display: flex;
-      gap: 10px;
-    }
+      .project-links {
+        font-size: 11px;
+        color: #555;
+        display: flex;
+        gap: 10px;
+      }
 
-    .project-links a {
-      color: #333;
-      text-decoration: none;
-      border-bottom: 1px solid #bbb;
-      padding-bottom: 1px;
-    }
+      .project-links a {
+        color: #333;
+        text-decoration: none;
+        border-bottom: 1px solid #bbb;
+        padding-bottom: 1px;
+      }
 
-    .project-links a:hover { border-bottom-color: #000; color: #000; }
+      .project-links a:hover {
+        border-bottom-color: #000;
+        color: #000;
+      }
 
-    .project-stack {
-      font-size: 11.5px;
-      color: #555;
-      margin-bottom: 4px;
-      font-style: italic;
-    }
+      .project-stack {
+        font-size: 11.5px;
+        color: #555;
+        margin-bottom: 4px;
+        font-style: italic;
+      }
 
-    /* ── Lists ── */
-    ul { padding-left: 16px; margin-top: 4px; }
-    ul li {
-      font-size: 12.5px;
-      margin-bottom: 3px;
-      line-height: 1.55;
-      color: #222;
-    }
+      /* ── Lists ── */
+      ul {
+        padding-left: 16px;
+        margin-top: 4px;
+      }
+      ul li {
+        font-size: 12.5px;
+        margin-bottom: 3px;
+        line-height: 1.55;
+        color: #222;
+      }
 
-    /* ── Education ── */
-    .edu-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
+      /* ── Education ── */
+      .edu-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
 
-    .edu-degree { font-weight: 700; font-size: 13px; color: #000; }
-    .edu-year   { font-size: 11.5px; color: #555; }
-    .edu-school { font-style: italic; font-size: 12px; color: #444; margin-top: 1px; }
+      .edu-degree {
+        font-weight: 700;
+        font-size: 13px;
+        color: #000;
+      }
+      .edu-year {
+        font-size: 11.5px;
+        color: #555;
+      }
+      .edu-school {
+        font-style: italic;
+        font-size: 12px;
+        color: #444;
+        margin-top: 1px;
+      }
 
-    /* ── Certifications ── */
-    .cert-item { font-size: 12.5px; margin-bottom: 3px; color: #222; }
-    .cert-link { font-size: 11.5px; color: #444; margin-top: 3px; }
-    .cert-link a { color: #333; border-bottom: 1px solid #bbb; padding-bottom: 1px; }
-    .cert-link a:hover { border-bottom-color: #000; color: #000; }
+      /* ── Certifications ── */
+      .cert-item {
+        font-size: 12.5px;
+        margin-bottom: 3px;
+        color: #222;
+      }
+      .cert-link {
+        font-size: 11.5px;
+        color: #444;
+        margin-top: 3px;
+      }
+      .cert-link a {
+        color: #333;
+        border-bottom: 1px solid #bbb;
+        padding-bottom: 1px;
+      }
+      .cert-link a:hover {
+        border-bottom-color: #000;
+        color: #000;
+      }
 
-    a { color: #111; text-decoration: none; }
+      a {
+        color: #111;
+        text-decoration: none;
+      }
 
-    /* ── Download button ── */
-    .download-btn {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background: #111;
-      color: #fff;
-      font-family: 'Lato', 'Calibri', Arial, sans-serif;
-      font-size: 12.5px;
-      font-weight: 700;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
-      padding: 10px 18px;
-      border-radius: 3px;
-      cursor: pointer;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.25);
-      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-      z-index: 999;
-      text-decoration: none;
-    }
-    .download-btn:hover {
-      background: #333;
-      color: #fff;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-    }
-    .download-btn:active {
-      transform: translateY(0);
-      box-shadow: 0 1px 6px rgba(0,0,0,0.2);
-    }
-    .download-btn svg { flex-shrink: 0; }
+      /* ── Download button ── */
+      .download-btn {
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: #111;
+        color: #fff;
+        font-family: "Lato", "Calibri", Arial, sans-serif;
+        font-size: 12.5px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        padding: 10px 18px;
+        border-radius: 3px;
+        cursor: pointer;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+        transition:
+          background 0.2s,
+          transform 0.15s,
+          box-shadow 0.2s;
+        z-index: 999;
+        text-decoration: none;
+      }
+      .download-btn:hover {
+        background: #333;
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      }
+      .download-btn:active {
+        transform: translateY(0);
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+      }
+      .download-btn svg {
+        flex-shrink: 0;
+      }
 
-    /* ── Print ── */
-    @media print {
-      body { background: #fff; padding: 0; }
-      .page { box-shadow: none; padding: 24px 40px; }
-      .download-btn { display: none; }
-    }
+      /* ── Print ── */
+      @media print {
+        body {
+          background: #fff;
+          padding: 0;
+        }
+        .page {
+          box-shadow: none;
+          padding: 24px 40px;
+        }
+        .download-btn {
+          display: none;
+        }
+      }
 
-    /* ── Responsive ── */
-    @media (max-width: 860px) {
-      body { padding: 20px 12px 50px; }
-      .page { padding: 36px 36px 40px; }
-    }
+      /* ── Responsive ── */
+      @media (max-width: 860px) {
+        body {
+          padding: 20px 12px 50px;
+        }
+        .page {
+          padding: 36px 36px 40px;
+        }
+      }
 
-    @media (max-width: 600px) {
-      body { padding: 12px 8px 40px; }
-      .page { padding: 28px 22px 32px; }
-      header h1 { font-size: 22px; letter-spacing: 2px; }
-      .contact-row { flex-direction: column; align-items: center; gap: 5px; font-size: 11px; }
-      .job-header { flex-direction: column; gap: 1px; }
-      .project-header { flex-direction: column; }
-      .edu-row { flex-direction: column; gap: 2px; }
-      .download-btn { bottom: 14px; right: 14px; font-size: 11px; padding: 9px 14px; }
-    }
+      @media (max-width: 600px) {
+        body {
+          padding: 12px 8px 40px;
+        }
+        .page {
+          padding: 28px 22px 32px;
+        }
+        header h1 {
+          font-size: 22px;
+          letter-spacing: 2px;
+        }
+        .contact-row {
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+          font-size: 11px;
+        }
+        .job-header {
+          flex-direction: column;
+          gap: 1px;
+        }
+        .project-header {
+          flex-direction: column;
+        }
+        .edu-row {
+          flex-direction: column;
+          gap: 2px;
+        }
+        .download-btn {
+          bottom: 14px;
+          right: 14px;
+          font-size: 11px;
+          padding: 9px 14px;
+        }
+      }
 
-    @media (max-width: 400px) {
-      .page { padding: 20px 16px 26px; }
-      header h1 { font-size: 18px; letter-spacing: 1.5px; }
-      .section-title { font-size: 10px; letter-spacing: 1.2px; }
-      body, p, ul li, .cert-item, .job-title, .project-name, .edu-degree { font-size: 12px; }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="page">
-
-    <header>
-      <h1>John Alvin Rivera</h1>
-      <div class="contact-row">
-        <span class="contact-item">
-          <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.5" y="0.5" width="12" height="9" rx="1" stroke="black"/>
-            <path d="M1 1L6.5 6L12 1" stroke="black" stroke-width="0.9"/>
-          </svg>
-          <a href="mailto:johnalvin2121@gmail.com">johnalvin2121@gmail.com</a>
-        </span>
-        <span class="contact-item">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="12" height="12" rx="2" fill="black"/>
-            <rect x="2" y="4.5" width="1.8" height="5.5" fill="white"/>
-            <circle cx="2.9" cy="2.5" r="0.9" fill="white"/>
-            <path d="M5.5 4.5H7.2V5.3C7.7 4.6 8.3 4.4 9 4.4C10.2 4.4 10.5 5.2 10.5 6.2V10H8.8V6.8C8.8 6.2 8.6 5.9 8.1 5.9C7.5 5.9 7.2 6.3 7.2 6.8V10H5.5V4.5Z" fill="white"/>
-          </svg>
-          <a href="https://linkedin.com/in/john-alvin-rivera-944648383" target="_blank">linkedin.com/in/john-alvin-rivera-944648383</a>
-        </span>
-        <span class="contact-item">
-          <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 0C2.24 0 0 2.24 0 5C0 8.75 5 13 5 13C5 13 10 8.75 10 5C10 2.24 7.76 0 5 0ZM5 6.75C4.03 6.75 3.25 5.97 3.25 5C3.25 4.03 4.03 3.25 5 3.25C5.97 3.25 6.75 4.03 6.75 5C6.75 5.97 5.97 6.75 5 6.75Z" fill="black"/>
-          </svg>
-          Caniogan, Pasig City
-        </span>
-      </div>
-      <div class="contact-row" style="margin-top:3px;">
-        <span class="contact-item">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="6.5" cy="6.5" r="6" stroke="black"/>
-            <ellipse cx="6.5" cy="6.5" rx="2.5" ry="6" stroke="black"/>
-            <line x1="0.5" y1="6.5" x2="12.5" y2="6.5" stroke="black"/>
-            <line x1="0.5" y1="3.8" x2="12.5" y2="3.8" stroke="black"/>
-            <line x1="0.5" y1="9.2" x2="12.5" y2="9.2" stroke="black"/>
-          </svg>
-          <a href="https://loopmaker.netlify.app/" target="_blank">https://loopmaker.netlify.app/</a>
-        </span>
-        <span class="contact-item">
-          <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.5" y="0.5" width="10" height="12" rx="1.5" stroke="black"/>
-            <line x1="0.5" y1="2.5" x2="10.5" y2="2.5" stroke="black"/>
-            <line x1="0.5" y1="10.5" x2="10.5" y2="10.5" stroke="black"/>
-            <circle cx="5.5" cy="11.7" r="0.5" fill="black"/>
-          </svg>
-          +63 906-073-1705
-        </span>
-        <span class="contact-item">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 0C2.91 0 0 2.91 0 6.5C0 9.38 1.86 11.82 4.45 12.68C4.77 12.74 4.89 12.55 4.89 12.38C4.89 12.23 4.88 11.75 4.88 11.22C3.25 11.55 2.83 10.83 2.7 10.46C2.63 10.27 2.31 9.67 2.04 9.51C1.82 9.38 1.49 9.05 2.04 9.04C2.56 9.03 2.92 9.54 3.04 9.73C3.62 10.72 4.54 10.44 4.91 10.26C4.97 9.83 5.14 9.54 5.33 9.38C3.87 9.21 2.34 8.64 2.34 6.15C2.34 5.43 2.6 4.84 3.03 4.38C2.96 4.21 2.73 3.54 3.1 2.64C3.1 2.64 3.64 2.47 4.89 3.31C5.43 3.16 6.01 3.08 6.59 3.08C7.17 3.08 7.75 3.16 8.29 3.31C9.54 2.46 10.08 2.64 10.08 2.64C10.45 3.54 10.22 4.21 10.15 4.38C10.58 4.84 10.84 5.42 10.84 6.15C10.84 8.65 9.3 9.21 7.84 9.38C8.08 9.58 8.29 9.97 8.29 10.58C8.29 11.45 8.28 12.15 8.28 12.38C8.28 12.55 8.4 12.74 8.72 12.68C11.3 11.82 13 9.37 13 6.5C13 2.91 10.09 0 6.5 0Z" fill="black"/>
-          </svg>
-          <a href="https://github.com/Loopmaker" target="_blank">github.com/Loopmaker</a>
-        </span>
-      </div>
-    </header>
-
-    <hr class="divider" />
-
-    <section>
-      <div class="section-title">Professional Summary</div>
-      <p>Junior Frontend Developer with a B.S. in Information Technology and hands-on experience building full-stack web applications using the PERN and MERN stacks. Developed production-ready projects featuring authentication, role-based access control, REST APIs, and responsive UI with React and Tailwind CSS. Seeking a junior engineering role where I can contribute to real-world product development and continue growing as a developer.</p>
-    </section>
-
-    <section>
-      <div class="section-title">Technical Skills</div>
-
-      <div class="skills-group">
-        <span class="skill-category">Languages:</span>
-        <span class="skill-pill">JavaScript</span>
-        <span class="skill-pill">TypeScript</span>
-      </div>
-
-      <div class="skills-group">
-        <span class="skill-category">Frontend:</span>
-        <span class="skill-pill">HTML</span>
-        <span class="skill-pill">CSS</span>
-        <span class="skill-pill">Tailwind CSS</span>
-        <span class="skill-pill">React</span>
-      </div>
-
-      <div class="skills-group">
-        <span class="skill-category">Backend:</span>
-        <span class="skill-pill">Node.js</span>
-        <span class="skill-pill">Express</span>
-      </div>
-
-      <div class="skills-group">
-        <span class="skill-category">Database:</span>
-        <span class="skill-pill">MongoDB</span>
-        <span class="skill-pill">PostgreSQL</span>
-      </div>
-
-      <div class="skills-group">
-        <span class="skill-category">Tools:</span>
-        <span class="skill-pill">Git</span>
-        <span class="skill-pill">GitHub</span>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-title">Professional Experience</div>
-      <div class="job-header">
-        <div class="job-title">IT Helpdesk Support Intern</div>
-        <div class="job-date">August 2025 – November 2025</div>
-      </div>
-      <div class="job-company">Black Orcas Summit Life Insurance Agency – Pru Life UK</div>
-      <ul>
-        <li>Provided first-line technical support to agency staff, diagnosing and resolving hardware, software, and connectivity issues to minimize downtime.</li>
-        <li>Digitized and reorganized company file systems, improving document retrieval efficiency for the team.</li>
-        <li>Managed the agency's social media presence by scheduling posts and creating branded graphics using Canva.</li>
-      </ul>
-    </section>
-
-
-    <section>
-      <div class="section-title">Projects</div>
-
-      <div class="project-block">
-        <div class="project-header">
-          <div class="project-name">Holler — Ecommerce</div>
-          <div class="project-links">
-            <a href="https://holler-uqto.onrender.com/" target="_blank">Live Demo</a>
-            <a href="https://github.com/Loopmaker/Holler" target="_blank">GitHub</a>
-          </div>
+      @media (max-width: 400px) {
+        .page {
+          padding: 20px 16px 26px;
+        }
+        header h1 {
+          font-size: 18px;
+          letter-spacing: 1.5px;
+        }
+        .section-title {
+          font-size: 10px;
+          letter-spacing: 1.2px;
+        }
+        body,
+        p,
+        ul li,
+        .cert-item,
+        .job-title,
+        .project-name,
+        .edu-degree {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>John Alvin Rivera</h1>
+        <div class="contact-row">
+          <span class="contact-item">
+            <svg
+              width="13"
+              height="10"
+              viewBox="0 0 13 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="12"
+                height="9"
+                rx="1"
+                stroke="black"
+              />
+              <path d="M1 1L6.5 6L12 1" stroke="black" stroke-width="0.9" />
+            </svg>
+            <a href="mailto:johnalvin2121@gmail.com">johnalvin2121@gmail.com</a>
+          </span>
+          <span class="contact-item">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="12" height="12" rx="2" fill="black" />
+              <rect x="2" y="4.5" width="1.8" height="5.5" fill="white" />
+              <circle cx="2.9" cy="2.5" r="0.9" fill="white" />
+              <path
+                d="M5.5 4.5H7.2V5.3C7.7 4.6 8.3 4.4 9 4.4C10.2 4.4 10.5 5.2 10.5 6.2V10H8.8V6.8C8.8 6.2 8.6 5.9 8.1 5.9C7.5 5.9 7.2 6.3 7.2 6.8V10H5.5V4.5Z"
+                fill="white"
+              />
+            </svg>
+            <a
+              href="https://linkedin.com/in/john-alvin-rivera-944648383"
+              target="_blank"
+              >linkedin.com/in/john-alvin-rivera-944648383</a
+            >
+          </span>
+          <span class="contact-item">
+            <svg
+              width="10"
+              height="13"
+              viewBox="0 0 10 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 0C2.24 0 0 2.24 0 5C0 8.75 5 13 5 13C5 13 10 8.75 10 5C10 2.24 7.76 0 5 0ZM5 6.75C4.03 6.75 3.25 5.97 3.25 5C3.25 4.03 4.03 3.25 5 3.25C5.97 3.25 6.75 4.03 6.75 5C6.75 5.97 5.97 6.75 5 6.75Z"
+                fill="black"
+              />
+            </svg>
+            Caniogan, Pasig City
+          </span>
         </div>
-        <div class="project-stack">PERN · TypeScript · Tailwind CSS</div>
-        <ul>
-          <li>Developed a full-stack e-commerce application using PostgreSQL, Express, React, and Node.js (PERN) with TypeScript, supporting product browsing, shopping cart, and checkout flow.</li>
-          <li>Built an admin dashboard for managing products, orders, and image uploads with cloud storage integration.</li>
-          <li>Implemented user authentication, RESTful API endpoints, and a webhook-ready backend for payment processing.</li>
-          <li>Enabled persistent cart state using local storage and session management.</li>
-        </ul>
-      </div>
-
-      <div class="project-block">
-        <div class="project-header">
-          <div class="project-name">Hirearchy — Employee Management System</div>
-          <div class="project-links">
-            <a href="https://hirearchy-ems.vercel.app/login" target="_blank">Live Demo</a>
-            <a href="https://github.com/Loopmaker/Hirearchy" target="_blank">GitHub</a>
-          </div>
+        <div class="contact-row" style="margin-top: 3px">
+          <span class="contact-item">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="6.5" cy="6.5" r="6" stroke="black" />
+              <ellipse cx="6.5" cy="6.5" rx="2.5" ry="6" stroke="black" />
+              <line x1="0.5" y1="6.5" x2="12.5" y2="6.5" stroke="black" />
+              <line x1="0.5" y1="3.8" x2="12.5" y2="3.8" stroke="black" />
+              <line x1="0.5" y1="9.2" x2="12.5" y2="9.2" stroke="black" />
+            </svg>
+            <a href="https://loopmaker.netlify.app/" target="_blank"
+              >https://loopmaker.netlify.app/</a
+            >
+          </span>
+          <span class="contact-item">
+            <svg
+              width="11"
+              height="13"
+              viewBox="0 0 11 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="10"
+                height="12"
+                rx="1.5"
+                stroke="black"
+              />
+              <line x1="0.5" y1="2.5" x2="10.5" y2="2.5" stroke="black" />
+              <line x1="0.5" y1="10.5" x2="10.5" y2="10.5" stroke="black" />
+              <circle cx="5.5" cy="11.7" r="0.5" fill="black" />
+            </svg>
+            +63 906-073-1705
+          </span>
+          <span class="contact-item">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.5 0C2.91 0 0 2.91 0 6.5C0 9.38 1.86 11.82 4.45 12.68C4.77 12.74 4.89 12.55 4.89 12.38C4.89 12.23 4.88 11.75 4.88 11.22C3.25 11.55 2.83 10.83 2.7 10.46C2.63 10.27 2.31 9.67 2.04 9.51C1.82 9.38 1.49 9.05 2.04 9.04C2.56 9.03 2.92 9.54 3.04 9.73C3.62 10.72 4.54 10.44 4.91 10.26C4.97 9.83 5.14 9.54 5.33 9.38C3.87 9.21 2.34 8.64 2.34 6.15C2.34 5.43 2.6 4.84 3.03 4.38C2.96 4.21 2.73 3.54 3.1 2.64C3.1 2.64 3.64 2.47 4.89 3.31C5.43 3.16 6.01 3.08 6.59 3.08C7.17 3.08 7.75 3.16 8.29 3.31C9.54 2.46 10.08 2.64 10.08 2.64C10.45 3.54 10.22 4.21 10.15 4.38C10.58 4.84 10.84 5.42 10.84 6.15C10.84 8.65 9.3 9.21 7.84 9.38C8.08 9.58 8.29 9.97 8.29 10.58C8.29 11.45 8.28 12.15 8.28 12.38C8.28 12.55 8.4 12.74 8.72 12.68C11.3 11.82 13 9.37 13 6.5C13 2.91 10.09 0 6.5 0Z"
+                fill="black"
+              />
+            </svg>
+            <a href="https://github.com/Loopmaker" target="_blank"
+              >github.com/Loopmaker</a
+            >
+          </span>
         </div>
-        <div class="project-stack">MERN · TypeScript · Tailwind CSS</div>
+      </header>
+
+      <hr class="divider" />
+
+      <section>
+        <div class="section-title">Professional Summary</div>
+        <p>
+          Junior Frontend Developer with a B.S. in Information Technology and
+          hands-on experience building full-stack web applications using the
+          PERN and MERN stacks. Developed production-ready projects featuring
+          authentication, role-based access control, REST APIs, and responsive
+          UI with React and Tailwind CSS. Seeking a junior engineering role
+          where I can contribute to real-world product development and continue
+          growing as a developer.
+        </p>
+      </section>
+
+      <section>
+        <div class="section-title">Technical Skills</div>
+
+        <div class="skills-group">
+          <span class="skill-category">Languages:</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">TypeScript</span>
+        </div>
+
+        <div class="skills-group">
+          <span class="skill-category">Frontend:</span>
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">Tailwind CSS</span>
+          <span class="skill-pill">React</span>
+        </div>
+
+        <div class="skills-group">
+          <span class="skill-category">Backend:</span>
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">Express</span>
+        </div>
+
+        <div class="skills-group">
+          <span class="skill-category">Database:</span>
+          <span class="skill-pill">MongoDB</span>
+          <span class="skill-pill">PostgreSQL</span>
+        </div>
+
+        <div class="skills-group">
+          <span class="skill-category">Tools:</span>
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">GitHub</span>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title">Professional Experience</div>
+        <div class="job-header">
+          <div class="job-title">IT Helpdesk Support Intern</div>
+          <div class="job-date">August 2025 – November 2025</div>
+        </div>
+        <div class="job-company">
+          Black Orcas Summit Life Insurance Agency – Pru Life UK
+        </div>
         <ul>
-          <li>Built a full-stack Employee Management System using the MERN stack (MongoDB, Express, React, Node.js) with TypeScript and Tailwind CSS.</li>
-          <li>Implemented JWT-based authentication and role-based access control (RBAC) to secure separate admin and employee dashboards.</li>
-          <li>Developed RESTful APIs with automated email notifications for leave requests and approvals.</li>
-          <li>Designed responsive UI components in React with Tailwind CSS, integrated with backend APIs using Axios for async data handling.</li>
+          <li>
+            Provided first-line technical support to agency staff, diagnosing
+            and resolving hardware, software, and connectivity issues to
+            minimize downtime.
+          </li>
+          <li>
+            Digitized and reorganized company file systems, improving document
+            retrieval efficiency for the team.
+          </li>
+          <li>
+            Managed the agency's social media presence by scheduling posts and
+            creating branded graphics using Canva.
+          </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <div class="section-title">Education</div>
-      <div class="edu-row">
-        <div class="edu-degree">Bachelor of Science in Information Technology</div>
-        <div class="edu-year">2021 – 2025</div>
-      </div>
-      <div class="edu-school">ICCT Colleges</div>
-    </section>
+      <section>
+        <div class="section-title">Projects</div>
 
-    <section>
-      <div class="section-title">Certifications</div>
-      <div class="cert-item">Responsive Web Design · freeCodeCamp (2025)</div>
-      <div class="cert-item">JavaScript Algorithms and Data Structures · freeCodeCamp (2025)</div>
-      <div class="cert-item">Responsive Web Design V8 · freeCodeCamp (2026)</div>
-      <div class="cert-link">
-        <a href="https://www.freecodecamp.org/lakshal" target="_blank">freecodecamp.org/lakshal</a>
-      </div>
-    </section>
+        <div class="project-block">
+          <div class="project-header">
+            <div class="project-name">Holler — Ecommerce</div>
+            <div class="project-links">
+              <a href="https://holler-uqto.onrender.com/" target="_blank"
+                >Live Demo</a
+              >
+              <a href="https://github.com/Loopmaker/Holler" target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-stack">PERN · TypeScript · Tailwind CSS</div>
+          <ul>
+            <li>
+              Developed a full-stack e-commerce application using PostgreSQL,
+              Express, React, and Node.js (PERN) with TypeScript, supporting
+              product browsing, shopping cart, and checkout flow.
+            </li>
+            <li>
+              Built an admin dashboard for managing products, orders, and image
+              uploads with cloud storage integration.
+            </li>
+            <li>
+              Implemented user authentication, RESTful API endpoints, and a
+              webhook-ready backend for payment processing.
+            </li>
+            <li>
+              Enabled persistent cart state using local storage and session
+              management.
+            </li>
+          </ul>
+        </div>
 
-  </div>
+        <div class="project-block">
+          <div class="project-header">
+            <div class="project-name">
+              Hirearchy — Employee Management System
+            </div>
+            <div class="project-links">
+              <a href="https://hirearchy-ems.vercel.app/login" target="_blank"
+                >Live Demo</a
+              >
+              <a href="https://github.com/Loopmaker/Hirearchy" target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-stack">MERN · JWT · Tailwind CSS</div>
+          <ul>
+            <li>
+              Built a full-stack Employee Management System using the MERN stack
+              (MongoDB, Express, React, Node.js).
+            </li>
+            <li>
+              Implemented JWT-based authentication and role-based access control
+              (RBAC) to secure separate admin and employee dashboards.
+            </li>
+            <li>
+              Developed RESTful APIs with automated email notifications for
+              leave requests and approvals.
+            </li>
+            <li>
+              Designed responsive UI components in React with Tailwind CSS,
+              integrated with backend APIs using Axios for async data handling.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-  <a class="download-btn" href="file/Resume.pdf" download="John_Alvin_Rivera_Resume.pdf">
-    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M7.5 1V10M7.5 10L4 6.5M7.5 10L11 6.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M1.5 11.5V13H13.5V11.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    Download PDF
-  </a>
+      <section>
+        <div class="section-title">Education</div>
+        <div class="edu-row">
+          <div class="edu-degree">
+            Bachelor of Science in Information Technology
+          </div>
+          <div class="edu-year">2021 – 2025</div>
+        </div>
+        <div class="edu-school">ICCT Colleges</div>
+      </section>
 
-</body>
+      <section>
+        <div class="section-title">Certifications</div>
+        <div class="cert-item">Responsive Web Design · freeCodeCamp (2025)</div>
+        <div class="cert-item">
+          JavaScript Algorithms and Data Structures · freeCodeCamp (2025)
+        </div>
+        <div class="cert-item">
+          Responsive Web Design V8 · freeCodeCamp (2026)
+        </div>
+        <div class="cert-link">
+          <a href="https://www.freecodecamp.org/lakshal" target="_blank"
+            >freecodecamp.org/lakshal</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <a
+      class="download-btn"
+      href="file/Resume.pdf"
+      download="John_Alvin_Rivera_Resume.pdf"
+    >
+      <svg
+        width="15"
+        height="15"
+        viewBox="0 0 15 15"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.5 1V10M7.5 10L4 6.5M7.5 10L11 6.5"
+          stroke="white"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M1.5 11.5V13H13.5V11.5"
+          stroke="white"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      Download PDF
+    </a>
+  </body>
 </html>
