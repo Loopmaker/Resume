@@ -106,34 +106,15 @@
       }
 
       /* ── Skills ── */
-      .skills-group {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 5px;
-        margin-bottom: 5px;
-      }
-
-      .skill-category {
-        font-size: 11.5px;
-        font-weight: 700;
-        min-width: 80px;
-        color: #000;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-      }
-
-      .skill-pill {
-        display: inline-block;
-        font-size: 11px;
-        font-weight: 700;
-        color: #111;
-        background: #f2f2f2;
-        border: 1px solid #ddd;
-        border-radius: 3px;
-        padding: 2px 8px;
+      .skills-line {
+        font-size: 12.5px;
         line-height: 1.6;
-        letter-spacing: 0.2px;
+        color: #222;
+        margin-bottom: 2px;
+      }
+      .skills-line strong {
+        font-weight: 700;
+        color: #000;
       }
 
       /* ── Experience ── */
@@ -251,19 +232,23 @@
         margin-bottom: 3px;
         color: #222;
       }
-      .cert-link {
+      /* ── Section title with right-aligned link ── */
+      .section-title.with-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 2px 12px;
+      }
+      .section-title.with-link a {
         font-size: 11.5px;
-        color: #444;
-        margin-top: 3px;
-      }
-      .cert-link a {
+        font-weight: 400;
+        letter-spacing: 0;
+        text-transform: none;
         color: #333;
-        border-bottom: 1px solid #bbb;
-        padding-bottom: 1px;
       }
-      .cert-link a:hover {
-        border-bottom-color: #000;
-        color: #000;
+      .section-title.with-link a:hover {
+        text-decoration: underline;
       }
 
       a {
@@ -538,65 +523,21 @@
 
       <section>
         <div class="section-title">Technical Skills</div>
-
-        <div class="skills-group">
-          <span class="skill-category">Languages:</span>
-          <span class="skill-pill">JavaScript</span>
-          <span class="skill-pill">TypeScript</span>
-          <span class="skill-pill">SQL</span>
+        <div class="skills-line">
+          <strong>Languages:</strong> JavaScript, TypeScript, SQL
         </div>
-
-        <div class="skills-group">
-          <span class="skill-category">Frontend:</span>
-          <span class="skill-pill">HTML</span>
-          <span class="skill-pill">CSS</span>
-          <span class="skill-pill">Tailwind CSS</span>
-          <span class="skill-pill">React</span>
+        <div class="skills-line">
+          <strong>Frontend:</strong> React, Next.js, HTML, CSS, Tailwind CSS
         </div>
-
-        <div class="skills-group">
-          <span class="skill-category">Backend:</span>
-          <span class="skill-pill">Node.js</span>
-          <span class="skill-pill">Express</span>
+        <div class="skills-line">
+          <strong>Backend:</strong> Node.js, Express, REST APIs, JWT, Prisma
         </div>
-
-        <div class="skills-group">
-          <span class="skill-category">Database:</span>
-          <span class="skill-pill">MongoDB</span>
-          <span class="skill-pill">PostgreSQL</span>
+        <div class="skills-line">
+          <strong>Databases:</strong> MongoDB, PostgreSQL, IndexedDB
         </div>
-
-        <div class="skills-group">
-          <span class="skill-category">Tools:</span>
-          <span class="skill-pill">Git</span>
-          <span class="skill-pill">GitHub</span>
+        <div class="skills-line">
+          <strong>Tools:</strong> Git, GitHub, Vercel
         </div>
-      </section>
-
-      <section>
-        <div class="section-title">Professional Experience</div>
-        <div class="job-header">
-          <div class="job-title">IT Helpdesk Support Intern</div>
-          <div class="job-date">August 2025 – November 2025</div>
-        </div>
-        <div class="job-company">
-          Black Orcas Summit Life Insurance Agency – Pru Life UK
-        </div>
-        <ul>
-          <li>
-            Provided first-line technical support to agency staff, diagnosing
-            and resolving hardware, software, and connectivity issues to
-            minimize downtime.
-          </li>
-          <li>
-            Digitized and reorganized company file systems, improving document
-            retrieval efficiency for the team.
-          </li>
-          <li>
-            Managed the agency's social media presence by scheduling posts and
-            creating branded graphics using Canva.
-          </li>
-        </ul>
       </section>
 
       <section>
@@ -676,6 +617,32 @@
       </section>
 
       <section>
+        <div class="section-title">Experience</div>
+        <div class="job-header">
+          <div class="job-title">IT Helpdesk Support Intern</div>
+          <div class="job-date">August 2025 – November 2025</div>
+        </div>
+        <div class="job-company">
+          Black Orcas Summit Life Insurance Agency – Pru Life UK
+        </div>
+        <ul>
+          <li>
+            Provided first-line technical support to agency staff, diagnosing
+            and resolving hardware, software, and connectivity issues to
+            minimize downtime.
+          </li>
+          <li>
+            Digitized and reorganized company file systems, improving document
+            retrieval efficiency for the team.
+          </li>
+          <li>
+            Managed the agency's social media presence by scheduling posts and
+            creating branded graphics using Canva.
+          </li>
+        </ul>
+      </section>
+
+      <section>
         <div class="section-title">Education</div>
         <div class="edu-row">
           <div class="edu-degree">
@@ -687,20 +654,17 @@
       </section>
 
       <section>
-        <div class="section-title">Certifications</div>
-        <div class="cert-item">
-          Responsive Web Design · freeCodeCamp (Legacy, 2025)
+        <div class="section-title with-link">
+          <span>Certifications</span>
+          <a href="https://www.freecodecamp.org/lakshal" target="_blank"
+            >freecodecamp.org/lakshal</a
+          >
         </div>
         <div class="cert-item">
           JavaScript Algorithms and Data Structures · freeCodeCamp (2025)
         </div>
         <div class="cert-item">
           Responsive Web Design V8 · freeCodeCamp (2026)
-        </div>
-        <div class="cert-link">
-          <a href="https://www.freecodecamp.org/lakshal" target="_blank"
-            >freecodecamp.org/lakshal</a
-          >
         </div>
       </section>
     </div>
